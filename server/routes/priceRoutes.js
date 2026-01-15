@@ -134,8 +134,6 @@ router.get("/", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch prices", details: error.message });
   }
 });
-
-// Get historical prices for a coin
 router.get("/history/:coinId", async (req, res) => {
   const { coinId } = req.params;
 
