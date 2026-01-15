@@ -1,0 +1,221 @@
+/* Comparison Styles */
+.comparison {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+html.dark-mode .comparison {
+  background: #374151;
+  border-color: var(--border-color);
+}
+
+.comparison h2 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.comparison .subtitle {
+  color: var(--text-light);
+  margin: 0 0 32px 0;
+}
+
+.coin-selector {
+  background: var(--bg-light);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+html.dark-mode .coin-selector {
+  background: #1f2937;
+}
+
+.coin-selector h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.coin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.coin-btn {
+  background: white;
+  border: 2px solid var(--border-color);
+  color: var(--text-dark);
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+html.dark-mode .coin-btn {
+  background: #374151;
+  color: white;
+}
+
+.coin-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.coin-btn.active {
+  background: linear-gradient(135deg, var(--primary-color), #1e40af);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.loading-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-light);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.comparison-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+html.dark-mode .comparison-card {
+  background: #1f2937;
+}
+
+.comparison-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.metrics {
+  display: grid;
+  gap: 12px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.metric .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.metric .value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.metric .value.positive {
+  color: #10b981;
+}
+
+.metric .value.negative {
+  color: #ef4444;
+}
+
+.comparison-stats {
+  background: var(--bg-light);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+html.dark-mode .comparison-stats {
+  background: #1f2937;
+}
+
+.comparison-stats h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+html.dark-mode .stat-card {
+  background: #374151;
+  border-color: var(--border-color);
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
